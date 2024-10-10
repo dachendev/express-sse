@@ -1,7 +1,6 @@
 {
   "name": "@dachendev/express-sse",
   "version": "1.0.0",
-  "private": true,
   "directories": {
     "lib": "lib"
   },
