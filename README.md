@@ -72,15 +72,10 @@ app.get('/sse-only', sseMiddleware(), (req, res) => {
   req.sse.send('Using just the SSE middleware')
 })
 
-app.get(
-  '/sse-with-broker',
-  sseMiddleware(),
-  sseBrokerMiddleware(broker),
-  (req, res) => {
-    req.sse.comment('Using both middlewares')
-    req.sse.subscribe('updates', (data) => req.sse.send(data))
-  }
-)
+app.get('/sse-with-broker', sseBrokerMiddleware(broker), (req, res) => {
+  req.sse.comment('Using both middlewares')
+  req.sse.subscribe('updates', (data) => req.sse.send(data))
+})
 
 app.post('/publish', (req, res) => {
   broker.publish('updates', req.body)
