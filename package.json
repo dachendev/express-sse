@@ -1,0 +1,17 @@
+{
+  "name": "@dachendev/express-sse",
+  "version": "1.0.0",
+  "private": true,
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "compose-middleware": "^5.0.1"
+  },
+  "peerDependencies": {
+    "express": "^4.21.1"
+  }
+}
