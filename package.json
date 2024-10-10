@@ -13,5 +13,24 @@
   },
   "peerDependencies": {
     "express": "^4.21.1"
-  }
+  },
+  "description": "Easy Server-Sent Events for Express.js",
+  "main": "lib/index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dachendev/express-sse.git"
+  },
+  "keywords": [
+    "express",
+    "sse",
+    "server-sent-events",
+    "event-stream"
+  ],
+  "author": "dachendev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dachendev/express-sse/issues"
+  },
+  "homepage": "https://github.com/dachendev/express-sse#readme"
 }
